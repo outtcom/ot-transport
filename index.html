@@ -8,7 +8,7 @@
   <meta name="keywords" content="box truck delivery Toronto, freight services GTA, LTL freight Ontario, commercial delivery Oshawa, Whitby truck delivery, dedicated fleet Durham Region, box truck rental Ajax, freight Scarborough, truck delivery Bowmanville">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="CA-ON">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#0B0F1A">
   <link rel="canonical" href="https://ottransport.com">
   <link rel="icon" type="image/png" href="OT Transport Logo Cropped.png">
 
@@ -122,30 +122,30 @@
         extend: {
           colors: {
             'ot-dark': {
-              950: '#111111',
-              900: '#1A1A1A',
-              800: '#242424',
-              700: '#2E2E2E',
-              600: '#383838',
+              950: '#0B0F1A',
+              900: '#111827',
+              800: '#1A2235',
+              700: '#222C42',
+              600: '#2A3652',
             },
             'ot-orange': {
-              700: '#C44000',
-              600: '#D94800',
-              500: '#E8500A',
-              400: '#FF7A3D',
-              300: '#FFB08A',
+              700: '#1247A0',
+              600: '#1A5FCC',
+              500: '#2B7FFF',
+              400: '#60A5FA',
+              300: '#BAD7FF',
             },
             'ot-white': '#F5F0EB',
-            'ot-muted': '#A09488',
+            'ot-muted': '#8A96A8',
           },
           fontFamily: {
             display: ['Barlow Condensed', 'sans-serif'],
             body: ['Inter', 'sans-serif'],
           },
           backgroundImage: {
-            'grad-cta':    'linear-gradient(135deg, #E8500A 0%, #C44000 100%)',
-            'grad-accent': 'linear-gradient(135deg, #C44000 0%, #E8500A 100%)',
-            'grad-card':   'linear-gradient(145deg, #242424 0%, #1A1A1A 100%)',
+            'grad-cta':    'linear-gradient(135deg, #2B7FFF 0%, #1247A0 100%)',
+            'grad-accent': 'linear-gradient(135deg, #1247A0 0%, #2B7FFF 100%)',
+            'grad-card':   'linear-gradient(145deg, #1A2235 0%, #111827 100%)',
           },
           letterSpacing: {
             'display': '-0.03em',
@@ -158,20 +158,20 @@
 
   <style>
     *, *::before, *::after { box-sizing: border-box; }
-    html { background: #111111; }
+    html { background: #0B0F1A; }
     body { font-family: 'Inter', sans-serif; color: #F5F0EB; }
     h1, h2, h3, h4, .font-display { font-family: 'Barlow Condensed', sans-serif; }
-    ::selection { background: #E8500A; color: #F5F0EB; }
+    ::selection { background: #2B7FFF; color: #F5F0EB; }
 
     /* ── Shadows ── */
     .shadow-ot-card {
-      box-shadow: 0 2px 8px rgba(17,17,17,0.7), 0 8px 32px rgba(17,17,17,0.5), 0 0 0 1px rgba(232,80,10,0.15);
+      box-shadow: 0 2px 8px rgba(11,15,26,0.7), 0 8px 32px rgba(11,15,26,0.5), 0 0 0 1px rgba(43,127,255,0.15);
     }
     .shadow-ot-cta {
-      box-shadow: 0 4px 16px rgba(232,80,10,0.4), 0 8px 32px rgba(232,80,10,0.2);
+      box-shadow: 0 4px 16px rgba(43,127,255,0.4), 0 8px 32px rgba(43,127,255,0.2);
     }
     .shadow-ot-cta-hover {
-      box-shadow: 0 6px 24px rgba(232,80,10,0.6), 0 12px 48px rgba(232,80,10,0.3);
+      box-shadow: 0 6px 24px rgba(43,127,255,0.6), 0 12px 48px rgba(43,127,255,0.3);
     }
 
     /* ── Grain overlay ── */
@@ -222,7 +222,7 @@
 
     /* ── Gradient text ── */
     .text-gradient {
-      background: linear-gradient(135deg, #FF7A3D 0%, #E8500A 50%, #FFB08A 100%);
+      background: linear-gradient(135deg, #60A5FA 0%, #2B7FFF 50%, #BAD7FF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -248,30 +248,30 @@
       position: absolute;
       top: 0; left: 0; bottom: 0;
       width: 0;
-      background: linear-gradient(to bottom, #E8500A, #C44000);
+      background: linear-gradient(to bottom, #2B7FFF, #1247A0);
       border-radius: 16px 0 0 16px;
       transition: width 0.3s cubic-bezier(0.34,1.56,0.64,1);
     }
     .service-card:hover .card-accent-bar { width: 3px; }
     .service-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(232,80,10,0.45) !important;
+      border-color: rgba(43,127,255,0.45) !important;
     }
     .service-card {
       transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
     .service-card:hover {
-      box-shadow: 0 8px 32px rgba(17,17,17,0.7), 0 20px 60px rgba(17,17,17,0.5), 0 0 0 1px rgba(232,80,10,0.35);
+      box-shadow: 0 8px 32px rgba(11,15,26,0.7), 0 20px 60px rgba(11,15,26,0.5), 0 0 0 1px rgba(43,127,255,0.35);
     }
 
     /* ── Nav scroll ── */
-    .nav-scrolled { border-bottom-color: rgba(232,80,10,0.25) !important; }
+    .nav-scrolled { border-bottom-color: rgba(43,127,255,0.25) !important; }
 
     /* ── Form inputs ── */
     .form-input:focus {
       outline: none;
-      border-color: rgba(232,80,10,0.55);
-      box-shadow: 0 0 0 3px rgba(232,80,10,0.12);
+      border-color: rgba(43,127,255,0.55);
+      box-shadow: 0 0 0 3px rgba(43,127,255,0.12);
     }
 
     /* ── Mobile menu ── */
@@ -284,18 +284,18 @@
 
     /* ── Nav CTA glow pulse ── */
     @keyframes glow-pulse {
-      0%, 100% { box-shadow: 0 4px 16px rgba(232,80,10,0.35), 0 8px 32px rgba(232,80,10,0.2); }
-      50%       { box-shadow: 0 4px 24px rgba(232,80,10,0.6), 0 8px 40px rgba(232,80,10,0.35); }
+      0%, 100% { box-shadow: 0 4px 16px rgba(43,127,255,0.35), 0 8px 32px rgba(43,127,255,0.2); }
+      50%       { box-shadow: 0 4px 24px rgba(43,127,255,0.6), 0 8px 40px rgba(43,127,255,0.35); }
     }
     .nav-cta-glow:hover { animation: glow-pulse 1.5s ease-in-out infinite; }
 
     /* ── Stat dividers ── */
     .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
     @media (min-width: 1024px) { .stat-grid { grid-template-columns: repeat(4, 1fr); } }
-    .stat-cell:not(:last-child) { border-right: 1px solid rgba(232,80,10,0.15); }
+    .stat-cell:not(:last-child) { border-right: 1px solid rgba(43,127,255,0.15); }
     @media (max-width: 1023px) {
       .stat-cell:nth-child(2) { border-right: none; }
-      .stat-cell:nth-child(1), .stat-cell:nth-child(2) { border-bottom: 1px solid rgba(232,80,10,0.15); }
+      .stat-cell:nth-child(1), .stat-cell:nth-child(2) { border-bottom: 1px solid rgba(43,127,255,0.15); }
     }
 
     /* ── Image overlays ── */
@@ -304,7 +304,7 @@
     .img-overlay .overlay-grad { position: absolute; inset: 0; pointer-events: none; }
 
     /* ── FAQ accordion ── */
-    .faq-item { border-bottom: 1px solid rgba(232,80,10,0.15); }
+    .faq-item { border-bottom: 1px solid rgba(43,127,255,0.15); }
     .faq-answer {
       max-height: 0;
       overflow: hidden;
@@ -321,7 +321,7 @@
     }
     .diff-block:hover .diff-icon {
       transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(232,80,10,0.3);
+      box-shadow: 0 6px 20px rgba(43,127,255,0.3);
     }
 
     /* ── Mobile touch targets ── */
@@ -336,7 +336,7 @@
 
 <!-- ===================== NAVBAR ===================== -->
 <nav id="navbar" class="sticky top-0 z-50 border-b border-ot-dark-700/50"
-     style="background: rgba(17,17,17,0.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(232,80,10,0.1), 0 4px 24px rgba(17,17,17,0.6);">
+     style="background: rgba(11,15,26,0.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(43,127,255,0.1), 0 4px 24px rgba(11,15,26,0.6);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
 
@@ -384,11 +384,11 @@
 </nav>
 
 <!-- ===================== HERO ===================== -->
-<section class="relative min-h-screen flex flex-col justify-center overflow-hidden grain-overlay" style="background: #111111;">
+<section class="relative min-h-screen flex flex-col justify-center overflow-hidden grain-overlay" style="background: #0B0F1A;">
   <!-- Gradient blobs -->
-  <div class="absolute pointer-events-none" style="top:-15%;left:-10%;width:60%;height:80%;background:radial-gradient(ellipse, rgba(196,64,0,0.25) 0%, transparent 70%);"></div>
-  <div class="absolute pointer-events-none" style="bottom:-10%;right:-5%;width:55%;height:70%;background:radial-gradient(ellipse, rgba(232,80,10,0.15) 0%, transparent 70%);"></div>
-  <div class="absolute pointer-events-none" style="top:40%;left:30%;width:40%;height:40%;background:radial-gradient(ellipse, rgba(196,64,0,0.1) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="top:-15%;left:-10%;width:60%;height:80%;background:radial-gradient(ellipse, rgba(18,71,160,0.25) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="bottom:-10%;right:-5%;width:55%;height:70%;background:radial-gradient(ellipse, rgba(43,127,255,0.15) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="top:40%;left:30%;width:40%;height:40%;background:radial-gradient(ellipse, rgba(18,71,160,0.1) 0%, transparent 70%);"></div>
 
   <!-- Hero image with overlay -->
   <div class="absolute inset-0 pointer-events-none" style="top: 25%;">
@@ -399,9 +399,9 @@
          fetchpriority="high"
          decoding="sync"
          width="1920" height="800">
-    <div class="absolute inset-0" style="background: linear-gradient(to bottom, #111111 0%, transparent 25%, transparent 65%, #111111 100%);"></div>
-    <div class="absolute inset-0" style="background: linear-gradient(to right, #111111 0%, transparent 15%, transparent 85%, #111111 100%);"></div>
-    <div class="absolute inset-0" style="background: rgba(196,64,0,0.08); mix-blend-mode: multiply;"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, #0B0F1A 0%, transparent 25%, transparent 65%, #0B0F1A 100%);"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(to right, #0B0F1A 0%, transparent 15%, transparent 85%, #0B0F1A 100%);"></div>
+    <div class="absolute inset-0" style="background: rgba(18,71,160,0.08); mix-blend-mode: multiply;"></div>
   </div>
 
   <!-- Hero content -->
@@ -409,7 +409,7 @@
 
     <!-- Eyebrow badge -->
     <div class="anim-slide-up inline-flex items-center gap-2 mb-8"
-         style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.3); border-radius: 9999px; padding: 6px 18px;">
+         style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.3); border-radius: 9999px; padding: 6px 18px;">
       <span class="w-1.5 h-1.5 rounded-full bg-ot-orange-400 animate-pulse"></span>
       <span class="font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui">Commercial Box Truck Services &mdash; 24/7 Dispatch</span>
     </div>
@@ -435,7 +435,7 @@
       </a>
       <a href="#services"
          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border text-ot-white/80 font-body font-medium px-8 py-4 rounded-xl hover:text-ot-white hover:bg-ot-dark-800/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 transition-[color,background-color,border-color] duration-200 text-base"
-         style="border-color: rgba(56,56,56,0.8);">
+         style="border-color: rgba(42,54,82,0.8);">
         View Our Services
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
       </a>
@@ -461,13 +461,13 @@
   </div>
 
   <!-- Bottom fade -->
-  <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none" style="background: linear-gradient(to bottom, transparent, #1A1A1A);"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none" style="background: linear-gradient(to bottom, transparent, #111827);"></div>
 </section>
 
 <!-- ===================== SERVICES ===================== -->
 <section id="services" class="relative bg-ot-dark-900 overflow-hidden grain-overlay scroll-mt-16 py-24 lg:py-32">
   <!-- Background blob -->
-  <div class="absolute pointer-events-none" style="top:-20%;right:-15%;width:50%;height:60%;background:radial-gradient(ellipse, rgba(196,64,0,0.12) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="top:-20%;right:-15%;width:50%;height:60%;background:radial-gradient(ellipse, rgba(18,71,160,0.12) 0%, transparent 70%);"></div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section header -->
@@ -483,53 +483,53 @@
       <!-- Card 1: Local Delivery -->
       <div class="service-card relative rounded-2xl p-8 flex flex-col gap-4 bg-grad-card border border-ot-dark-700/50 shadow-ot-card anim-slide-up anim-delay-1">
         <div class="card-accent-bar"></div>
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.25);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.25);">
           <svg class="w-6 h-6 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 17l-2-2m0 0L4 13m2 2H2m10-8v2m0 0H8m4 0h4m4 4v4a1 1 0 01-1 1h-1M6 17H5a1 1 0 01-1-1V9a1 1 0 011-1h8a1 1 0 011 1v1M13 10h5l2 5v2h-2m0 0a2 2 0 11-4 0m4 0a2 2 0 01-4 0"/>
           </svg>
         </div>
         <h3 class="font-display font-bold text-ot-white" style="font-size: 1.5rem; letter-spacing: -0.01em;">Local Delivery</h3>
         <p class="font-body text-ot-muted text-sm flex-1" style="line-height: 1.7;">Same-day and next-day box truck delivery within the GTA metro area. Palletized or loose freight. No minimum load requirements.</p>
-        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.2);">Metro Area</span>
+        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.2);">Metro Area</span>
       </div>
 
       <!-- Card 2: Scheduled Routes -->
       <div class="service-card relative rounded-2xl p-8 flex flex-col gap-4 bg-grad-card border border-ot-dark-700/50 shadow-ot-card anim-slide-up anim-delay-2">
         <div class="card-accent-bar"></div>
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.25);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.25);">
           <svg class="w-6 h-6 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
           </svg>
         </div>
         <h3 class="font-display font-bold text-ot-white" style="font-size: 1.5rem; letter-spacing: -0.01em;">Scheduled Routes</h3>
         <p class="font-body text-ot-muted text-sm flex-1" style="line-height: 1.7;">Recurring delivery contracts for businesses with regular freight needs. Fixed schedules, predictable costs, and consistent drivers.</p>
-        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.2);">Weekly / Daily</span>
+        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.2);">Weekly / Daily</span>
       </div>
 
       <!-- Card 3: LTL Freight -->
       <div class="service-card relative rounded-2xl p-8 flex flex-col gap-4 bg-grad-card border border-ot-dark-700/50 shadow-ot-card anim-slide-up anim-delay-3">
         <div class="card-accent-bar"></div>
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.25);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.25);">
           <svg class="w-6 h-6 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
           </svg>
         </div>
         <h3 class="font-display font-bold text-ot-white" style="font-size: 1.5rem; letter-spacing: -0.01em;">LTL Freight</h3>
         <p class="font-body text-ot-muted text-sm flex-1" style="line-height: 1.7;">Less-than-truckload solutions that share space efficiently. Pay only for what you use — ideal for growing businesses managing variable shipment volumes.</p>
-        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.2);">Flexible Loads</span>
+        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.2);">Flexible Loads</span>
       </div>
 
       <!-- Card 4: Dedicated Fleet -->
       <div class="service-card relative rounded-2xl p-8 flex flex-col gap-4 bg-grad-card border border-ot-dark-700/50 shadow-ot-card anim-slide-up anim-delay-4">
         <div class="card-accent-bar"></div>
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.25);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.25);">
           <svg class="w-6 h-6 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
           </svg>
         </div>
         <h3 class="font-display font-bold text-ot-white" style="font-size: 1.5rem; letter-spacing: -0.01em;">Dedicated Fleet</h3>
         <p class="font-body text-ot-muted text-sm flex-1" style="line-height: 1.7;">Reserve dedicated trucks and drivers exclusively for your operation. Full-time capacity with priority scheduling and direct driver contact.</p>
-        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(196,64,0,0.2); border: 1px solid rgba(232,80,10,0.2);">Premium Service</span>
+        <span class="inline-block self-start font-body text-xs font-semibold text-ot-orange-300 uppercase tracking-wide-ui px-3 py-1 rounded-full" style="background: rgba(18,71,160,0.2); border: 1px solid rgba(43,127,255,0.2);">Premium Service</span>
       </div>
 
     </div>
@@ -539,8 +539,8 @@
 <!-- ===================== WHY CHOOSE US ===================== -->
 <section id="why-us" class="relative bg-ot-dark-950 overflow-hidden grain-overlay scroll-mt-16">
   <!-- Background blobs -->
-  <div class="absolute pointer-events-none" style="top:10%;left:-10%;width:50%;height:60%;background:radial-gradient(ellipse, rgba(232,80,10,0.1) 0%, transparent 70%);"></div>
-  <div class="absolute pointer-events-none" style="bottom:0%;right:-5%;width:45%;height:50%;background:radial-gradient(ellipse, rgba(196,64,0,0.12) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="top:10%;left:-10%;width:50%;height:60%;background:radial-gradient(ellipse, rgba(43,127,255,0.1) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="bottom:0%;right:-5%;width:45%;height:50%;background:radial-gradient(ellipse, rgba(18,71,160,0.12) 0%, transparent 70%);"></div>
 
   <!-- Stats row -->
   <div class="relative stat-grid border-b border-ot-dark-800/60">
@@ -580,7 +580,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 mb-20">
 
       <div class="diff-block flex flex-col gap-5 anim-slide-up anim-delay-1">
-        <div class="diff-icon w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, rgba(196,64,0,0.35), rgba(232,80,10,0.18)); border: 1px solid rgba(232,80,10,0.3); box-shadow: 0 4px 16px rgba(232,80,10,0.12);">
+        <div class="diff-icon w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, rgba(18,71,160,0.35), rgba(43,127,255,0.18)); border: 1px solid rgba(43,127,255,0.3); box-shadow: 0 4px 16px rgba(43,127,255,0.12);">
           <svg class="w-7 h-7 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
           </svg>
@@ -592,7 +592,7 @@
       </div>
 
       <div class="diff-block flex flex-col gap-5 anim-slide-up anim-delay-2">
-        <div class="diff-icon w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, rgba(196,64,0,0.35), rgba(232,80,10,0.18)); border: 1px solid rgba(232,80,10,0.3); box-shadow: 0 4px 16px rgba(232,80,10,0.12);">
+        <div class="diff-icon w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, rgba(18,71,160,0.35), rgba(43,127,255,0.18)); border: 1px solid rgba(43,127,255,0.3); box-shadow: 0 4px 16px rgba(43,127,255,0.12);">
           <svg class="w-7 h-7 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
           </svg>
@@ -604,7 +604,7 @@
       </div>
 
       <div class="diff-block flex flex-col gap-5 anim-slide-up anim-delay-3">
-        <div class="diff-icon w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, rgba(196,64,0,0.35), rgba(232,80,10,0.18)); border: 1px solid rgba(232,80,10,0.3); box-shadow: 0 4px 16px rgba(232,80,10,0.12);">
+        <div class="diff-icon w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, rgba(18,71,160,0.35), rgba(43,127,255,0.18)); border: 1px solid rgba(43,127,255,0.3); box-shadow: 0 4px 16px rgba(43,127,255,0.12);">
           <svg class="w-7 h-7 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
           </svg>
@@ -617,36 +617,36 @@
     </div>
 
     <!-- Fleet image strip -->
-    <div class="anim-scale-in relative rounded-2xl overflow-hidden" style="box-shadow: 0 8px 40px rgba(17,17,17,0.9);">
+    <div class="anim-scale-in relative rounded-2xl overflow-hidden" style="box-shadow: 0 8px 40px rgba(11,15,26,0.9);">
       <img src="assets/images/truck-fleet.webp"
            alt="OT Transport fleet of box trucks ready for dispatch"
            class="w-full object-cover"
            style="max-height: 400px;"
            loading="lazy" decoding="async" width="1920" height="640">
-      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to right, #111111 0%, transparent 20%, transparent 80%, #111111 100%);"></div>
-      <div class="absolute inset-0 pointer-events-none" style="background: rgba(196,64,0,0.18); mix-blend-mode: multiply;"></div>
-      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to bottom, transparent 50%, #111111 100%);"></div>
+      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to right, #0B0F1A 0%, transparent 20%, transparent 80%, #0B0F1A 100%);"></div>
+      <div class="absolute inset-0 pointer-events-none" style="background: rgba(18,71,160,0.18); mix-blend-mode: multiply;"></div>
+      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to bottom, transparent 50%, #0B0F1A 100%);"></div>
     </div>
   </div>
 </section>
 
 <!-- ===================== DRIVER TRUST STRIP ===================== -->
-<section class="relative overflow-hidden" style="background: #1A1A1A;">
+<section class="relative overflow-hidden" style="background: #111827;">
   <!-- Blob -->
-  <div class="absolute pointer-events-none inset-0" style="background: radial-gradient(ellipse at 60% 50%, rgba(232,80,10,0.1) 0%, transparent 60%);"></div>
+  <div class="absolute pointer-events-none inset-0" style="background: radial-gradient(ellipse at 60% 50%, rgba(43,127,255,0.1) 0%, transparent 60%);"></div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
       <!-- Image -->
-      <div class="anim-slide-left relative rounded-2xl overflow-hidden order-2 lg:order-1" style="box-shadow: 0 8px 48px rgba(17,17,17,0.8);">
+      <div class="anim-slide-left relative rounded-2xl overflow-hidden order-2 lg:order-1" style="box-shadow: 0 8px 48px rgba(11,15,26,0.8);">
         <img src="assets/images/truck-driver.webp"
              alt="OT Transport driver ready for dispatch — professional, reliable commercial freight"
              class="w-full object-cover object-top"
              style="max-height: 500px;"
              loading="lazy" decoding="async" width="960" height="640">
-        <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to bottom, transparent 60%, rgba(17,17,17,0.7) 100%);"></div>
-        <div class="absolute inset-0 pointer-events-none" style="background: rgba(196,64,0,0.12); mix-blend-mode: multiply;"></div>
+        <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to bottom, transparent 60%, rgba(11,15,26,0.7) 100%);"></div>
+        <div class="absolute inset-0 pointer-events-none" style="background: rgba(18,71,160,0.12); mix-blend-mode: multiply;"></div>
       </div>
 
       <!-- Content -->
@@ -663,11 +663,11 @@
 
         <!-- Mini stats -->
         <div class="grid grid-cols-2 gap-6">
-          <div style="border-left: 2px solid rgba(232,80,10,0.5); padding-left: 1rem;">
+          <div style="border-left: 2px solid rgba(43,127,255,0.5); padding-left: 1rem;">
             <div class="font-display font-extrabold text-ot-orange-400 mb-1" style="font-size: 2.25rem; letter-spacing: -0.03em; line-height: 1;">100%</div>
             <div class="font-body text-ot-muted text-sm">GPS-tracked deliveries</div>
           </div>
-          <div style="border-left: 2px solid rgba(232,80,10,0.5); padding-left: 1rem;">
+          <div style="border-left: 2px solid rgba(43,127,255,0.5); padding-left: 1rem;">
             <div class="font-display font-extrabold text-ot-orange-400 mb-1" style="font-size: 2.25rem; letter-spacing: -0.03em; line-height: 1;">2hr</div>
             <div class="font-body text-ot-muted text-sm">Quote response time</div>
           </div>
@@ -686,7 +686,7 @@
 <!-- ===================== FAQ ===================== -->
 <section id="faq" class="relative bg-ot-dark-950 overflow-hidden grain-overlay scroll-mt-16 py-24 lg:py-32">
   <!-- Blob -->
-  <div class="absolute pointer-events-none" style="top:0;right:-10%;width:45%;height:55%;background:radial-gradient(ellipse, rgba(196,64,0,0.1) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="top:0;right:-10%;width:45%;height:55%;background:radial-gradient(ellipse, rgba(18,71,160,0.1) 0%, transparent 70%);"></div>
 
   <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-14 anim-slide-up">
@@ -770,7 +770,7 @@
 <!-- ===================== CONTACT / QUOTE ===================== -->
 <section id="contact" class="relative bg-ot-dark-900 overflow-hidden grain-overlay scroll-mt-16 py-24 lg:py-32">
   <!-- Background blob -->
-  <div class="absolute pointer-events-none" style="bottom:-10%;left:-5%;width:55%;height:60%;background:radial-gradient(ellipse, rgba(232,80,10,0.1) 0%, transparent 70%);"></div>
+  <div class="absolute pointer-events-none" style="bottom:-10%;left:-5%;width:55%;height:60%;background:radial-gradient(ellipse, rgba(43,127,255,0.1) 0%, transparent 70%);"></div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header -->
@@ -789,7 +789,7 @@
 
         <address class="not-italic flex flex-col gap-6 mb-10">
           <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(196,64,0,0.25); border: 1px solid rgba(232,80,10,0.25);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(18,71,160,0.25); border: 1px solid rgba(43,127,255,0.25);">
               <svg class="w-5 h-5 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
             <div>
@@ -799,7 +799,7 @@
           </div>
 
           <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(196,64,0,0.25); border: 1px solid rgba(232,80,10,0.25);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(18,71,160,0.25); border: 1px solid rgba(43,127,255,0.25);">
               <svg class="w-5 h-5 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
             <div>
@@ -809,7 +809,7 @@
           </div>
 
           <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(196,64,0,0.25); border: 1px solid rgba(232,80,10,0.25);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgba(18,71,160,0.25); border: 1px solid rgba(43,127,255,0.25);">
               <svg class="w-5 h-5 text-ot-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             </div>
             <div>
@@ -821,35 +821,35 @@
 
         <!-- Service area cities chips -->
         <div class="flex flex-wrap gap-2">
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Toronto</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Scarborough</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Pickering</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Ajax</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Whitby</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Oshawa</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Courtice</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Bowmanville</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Port Perry</span>
-          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.6);">Cobourg</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Toronto</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Scarborough</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Pickering</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Ajax</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Whitby</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Oshawa</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Courtice</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Bowmanville</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Port Perry</span>
+          <span class="font-body text-xs text-ot-muted px-3 py-1 rounded-full" style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.6);">Cobourg</span>
         </div>
       </div>
 
       <!-- Right: form -->
       <div class="anim-slide-right">
-        <form class="flex flex-col gap-5 rounded-2xl p-8 shadow-ot-card bg-grad-card" style="border: 1px solid rgba(56,56,56,0.5);" novalidate>
+        <form class="flex flex-col gap-5 rounded-2xl p-8 shadow-ot-card bg-grad-card" style="border: 1px solid rgba(42,54,82,0.5);" novalidate>
           <!-- Row: Company + Contact -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="flex flex-col gap-1.5">
               <label for="company" class="font-body font-semibold text-sm text-ot-white/80">Company Name <span class="text-ot-orange-400" aria-hidden="true">*</span></label>
               <input type="text" id="company" name="company" required placeholder="Acme Logistics"
                      class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white placeholder-ot-muted/50 transition-[border-color,box-shadow] duration-200"
-                     style="border: 1px solid rgba(56,56,56,0.7);">
+                     style="border: 1px solid rgba(42,54,82,0.7);">
             </div>
             <div class="flex flex-col gap-1.5">
               <label for="contact-name" class="font-body font-semibold text-sm text-ot-white/80">Contact Name <span class="text-ot-orange-400" aria-hidden="true">*</span></label>
               <input type="text" id="contact-name" name="contact_name" required placeholder="Jane Smith"
                      class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white placeholder-ot-muted/50 transition-[border-color,box-shadow] duration-200"
-                     style="border: 1px solid rgba(56,56,56,0.7);">
+                     style="border: 1px solid rgba(42,54,82,0.7);">
             </div>
           </div>
 
@@ -859,13 +859,13 @@
               <label for="email" class="font-body font-semibold text-sm text-ot-white/80">Email <span class="text-ot-orange-400" aria-hidden="true">*</span></label>
               <input type="email" id="email" name="email" required placeholder="jane@company.com"
                      class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white placeholder-ot-muted/50 transition-[border-color,box-shadow] duration-200"
-                     style="border: 1px solid rgba(56,56,56,0.7);">
+                     style="border: 1px solid rgba(42,54,82,0.7);">
             </div>
             <div class="flex flex-col gap-1.5">
               <label for="phone" class="font-body font-semibold text-sm text-ot-white/80">Phone</label>
               <input type="tel" id="phone" name="phone" placeholder="(416) 000-0000"
                      class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white placeholder-ot-muted/50 transition-[border-color,box-shadow] duration-200"
-                     style="border: 1px solid rgba(56,56,56,0.7);">
+                     style="border: 1px solid rgba(42,54,82,0.7);">
             </div>
           </div>
 
@@ -875,25 +875,25 @@
               <label for="shipment-type" class="font-body font-semibold text-sm text-ot-white/80">Service Needed</label>
               <select id="shipment-type" name="shipment_type"
                       class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white transition-[border-color,box-shadow] duration-200 appearance-none cursor-pointer"
-                      style="border: 1px solid rgba(56,56,56,0.7); background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23A09488'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E&quot;); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; padding-right: 40px;">
-                <option value="" style="background:#1A1A1A;">Select a service…</option>
-                <option value="local" style="background:#1A1A1A;">Local Delivery</option>
-                <option value="scheduled" style="background:#1A1A1A;">Scheduled Routes</option>
-                <option value="ltl" style="background:#1A1A1A;">LTL Freight</option>
-                <option value="dedicated" style="background:#1A1A1A;">Dedicated Fleet</option>
-                <option value="other" style="background:#1A1A1A;">Other / Not Sure</option>
+                      style="border: 1px solid rgba(42,54,82,0.7); background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%238A96A8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E&quot;); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; padding-right: 40px;">
+                <option value="" style="background:#111827;">Select a service…</option>
+                <option value="local" style="background:#111827;">Local Delivery</option>
+                <option value="scheduled" style="background:#111827;">Scheduled Routes</option>
+                <option value="ltl" style="background:#111827;">LTL Freight</option>
+                <option value="dedicated" style="background:#111827;">Dedicated Fleet</option>
+                <option value="other" style="background:#111827;">Other / Not Sure</option>
               </select>
             </div>
             <div class="flex flex-col gap-1.5">
               <label for="frequency" class="font-body font-semibold text-sm text-ot-white/80">Frequency</label>
               <select id="frequency" name="frequency"
                       class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white transition-[border-color,box-shadow] duration-200 appearance-none cursor-pointer"
-                      style="border: 1px solid rgba(56,56,56,0.7); background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23A09488'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E&quot;); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; padding-right: 40px;">
-                <option value="" style="background:#1A1A1A;">How often?</option>
-                <option value="onetime" style="background:#1A1A1A;">One-Time</option>
-                <option value="asneeded" style="background:#1A1A1A;">As Needed</option>
-                <option value="weekly" style="background:#1A1A1A;">Weekly</option>
-                <option value="daily" style="background:#1A1A1A;">Daily</option>
+                      style="border: 1px solid rgba(42,54,82,0.7); background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%238A96A8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E&quot;); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; padding-right: 40px;">
+                <option value="" style="background:#111827;">How often?</option>
+                <option value="onetime" style="background:#111827;">One-Time</option>
+                <option value="asneeded" style="background:#111827;">As Needed</option>
+                <option value="weekly" style="background:#111827;">Weekly</option>
+                <option value="daily" style="background:#111827;">Daily</option>
               </select>
             </div>
           </div>
@@ -904,7 +904,7 @@
             <textarea id="shipment-details" name="shipment_details" rows="3"
                       placeholder="Pickup location, destination, cargo type, weight/volume estimates…"
                       class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white placeholder-ot-muted/50 transition-[border-color,box-shadow] duration-200 resize-none"
-                      style="border: 1px solid rgba(56,56,56,0.7);"></textarea>
+                      style="border: 1px solid rgba(42,54,82,0.7);"></textarea>
           </div>
 
           <!-- Message -->
@@ -913,7 +913,7 @@
             <textarea id="message" name="message" rows="3"
                       placeholder="Any other details, special requirements, or questions…"
                       class="form-input bg-ot-dark-950 rounded-xl px-4 py-3 font-body text-sm text-ot-white placeholder-ot-muted/50 transition-[border-color,box-shadow] duration-200 resize-none"
-                      style="border: 1px solid rgba(56,56,56,0.7);"></textarea>
+                      style="border: 1px solid rgba(42,54,82,0.7);"></textarea>
           </div>
 
           <!-- Submit -->
@@ -931,7 +931,7 @@
 </section>
 
 <!-- ===================== FOOTER ===================== -->
-<footer class="bg-ot-dark-950 border-t anim-fade" style="border-color: rgba(56,56,56,0.5);">
+<footer class="bg-ot-dark-950 border-t anim-fade" style="border-color: rgba(42,54,82,0.5);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 
@@ -946,12 +946,12 @@
         <div class="flex items-center gap-3">
           <a href="#" aria-label="OT Transport on LinkedIn"
              class="w-9 h-9 rounded-lg flex items-center justify-center text-ot-muted hover:text-ot-orange-400 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 transition-[color,transform] duration-200"
-             style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.5);">
+             style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.5);">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           </a>
           <a href="#" aria-label="OT Transport on Facebook"
              class="w-9 h-9 rounded-lg flex items-center justify-center text-ot-muted hover:text-ot-orange-400 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 transition-[color,transform] duration-200"
-             style="background: rgba(36,36,36,0.8); border: 1px solid rgba(56,56,56,0.5);">
+             style="background: rgba(26,34,53,0.8); border: 1px solid rgba(42,54,82,0.5);">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
         </div>
@@ -990,7 +990,7 @@
     </div>
 
     <!-- Bottom bar -->
-    <div class="mt-14 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style="border-top: 1px solid rgba(56,56,56,0.4);">
+    <div class="mt-14 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style="border-top: 1px solid rgba(42,54,82,0.4);">
       <p class="font-body text-xs text-ot-muted">&copy; 2026 OT Transport. All rights reserved.</p>
       <p class="font-body text-xs text-ot-muted">DOT #XXXXXX &nbsp;|&nbsp; MC #XXXXXX</p>
     </div>
