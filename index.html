@@ -1320,26 +1320,23 @@
     submitBtn.textContent = 'Sending…';
 
     try {
-      const res  = await fetch(APPS_SCRIPT_URL, {
+      await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
+        mode: 'no-cors',
         body: JSON.stringify(payload),
       });
-      const json = await res.json();
 
-      if (json.success) {
-        // Replace form with thank-you message
-        inquiryForm.innerHTML = `
-          <div class="flex flex-col items-center gap-4 py-8 text-center">
-            <svg class="w-14 h-14 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <h3 class="font-display font-bold text-2xl text-ot-white">We got your inquiry!</h3>
-            <p class="font-body text-ot-muted max-w-xs">Our team will reach out within 2 business hours. Keep an eye on your inbox.</p>
-          </div>
-        `;
-      } else {
-        throw new Error(json.error || 'Unknown error');
-      }
+      // no-cors means the response is opaque — we can't read it,
+      // but if we get here the request was sent successfully.
+      inquiryForm.innerHTML = `
+        <div class="flex flex-col items-center gap-4 py-8 text-center">
+          <svg class="w-14 h-14 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <h3 class="font-display font-bold text-2xl text-ot-white">We got your inquiry!</h3>
+          <p class="font-body text-ot-muted max-w-xs">Our team will reach out within 2 business hours. Keep an eye on your inbox.</p>
+        </div>
+      `;
     } catch (err) {
       console.error('Form submission error:', err);
       submitBtn.disabled = false;
