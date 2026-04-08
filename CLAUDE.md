@@ -12,6 +12,18 @@ Static frontend website for **OT Transport**. Output is a single `index.html` wi
 - After screenshotting, read the PNG with the Read tool to visually inspect it
 - Puppeteer executable: find Chrome with `node -e "const p=require('puppeteer'); p.executablePath && console.log(p.executablePath())"`
 
+## Form Handler (Google Apps Script)
+
+- Script file: `tools/form-handler.gs`
+- Deployed as a Google Apps Script Web App on account: `inamdarglobalconnect@gmail.com`
+- Active deployment URL (set in `index.html` line ~1281): `https://script.google.com/macros/s/AKfycbwqdnCSSEAeOjEtl-eYrgXDUlHbs8srfFKla1yMQh9HrDZVWgjRgPqRnCuNm59eB2SEBg/exec`
+- Notifications sent to: `inamdarglobalconnect@gmail.com`
+- Leads saved to Google Sheet ID: `14OwDuJD1_Q77E2SQZrE3RVCM4wlcIXgd4TXaJ_YkK_w`
+- Deployment settings: Execute as **Me**, Who has access: **Anyone** (not "Anyone with a Google account")
+- Fetch mode: `no-cors` with no explicit Content-Type header — required because Apps Script redirects POST requests (302), and regular CORS mode converts POST to GET on redirect, breaking `doPost`
+- The script URL must be tested in an **incognito window** (no Google account) due to multi-account browser conflicts on the owner's machine
+- Hosted on Vercel, source on GitHub (`outtcom/ot-transport`) — push to `main` to deploy
+
 ---
 
 ## Frontend Website Rules
