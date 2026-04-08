@@ -1278,7 +1278,7 @@
   });
 
   // ── Inquiry form submission → Google Apps Script ───────────────────────────
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwIRCqaye6YmGHRsHVxa_67K3zB1dstWBbaGWbEhbiRfKqLKhwUSJTrPgZsyo-mhBPm/exec';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwqdnCSSEAeOjEtl-eYrgXDUlHbs8srfFKla1yMQh9HrDZVWgjRgPqRnCuNm59eB2SEBg/exec';
 
   const inquiryForm = document.getElementById('inquiry-form');
   const submitBtn   = document.getElementById('form-submit-btn');
@@ -1326,8 +1326,6 @@
         body: JSON.stringify(payload),
       });
 
-      // no-cors means the response is opaque — we can't read it,
-      // but if we get here the request was sent successfully.
       inquiryForm.innerHTML = `
         <div class="flex flex-col items-center gap-4 py-8 text-center">
           <svg class="w-14 h-14 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">

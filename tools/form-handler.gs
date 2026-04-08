@@ -6,7 +6,7 @@
 // After deploying, copy the Web App URL into index.html (APPS_SCRIPT_URL constant).
 
 var SHEET_ID = '14OwDuJD1_Q77E2SQZrE3RVCM4wlcIXgd4TXaJ_YkK_w';
-var NOTIFY_EMAIL = 'ottransport247@gmail.com';
+var NOTIFY_EMAIL = 'inamdarglobalconnect@gmail.com';
 
 function doPost(e) {
   try {
