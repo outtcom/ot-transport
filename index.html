@@ -1012,7 +1012,7 @@
 
       <!-- Right: form -->
       <div class="anim-slide-right">
-        <form class="flex flex-col gap-5 rounded-2xl p-8 shadow-ot-card bg-grad-card" style="border: 1px solid rgba(197,215,255,0.7);" novalidate>
+        <form id="inquiry-form" class="flex flex-col gap-5 rounded-2xl p-8 shadow-ot-card bg-grad-card" style="border: 1px solid rgba(197,215,255,0.7);" novalidate>
           <!-- Row: Company + Contact -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="flex flex-col gap-1.5">
@@ -1094,7 +1094,7 @@
           </div>
 
           <!-- Submit -->
-          <button type="submit"
+          <button id="form-submit-btn" type="submit"
                   class="btn-cta w-full bg-grad-cta text-ot-white font-body font-semibold py-4 px-8 rounded-xl shadow-ot-cta hover:shadow-ot-cta-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 transition-[transform,box-shadow] duration-200 text-base mt-1">
             Request a Quote — No Obligation
           </button>
@@ -1275,6 +1275,80 @@
       const offset = navbar.offsetHeight + 8;
       window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
     });
+  });
+
+  // ── Inquiry form submission → Google Apps Script ───────────────────────────
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwIRCqaye6YmGHRsHVxa_67K3zB1dstWBbaGWbEhbiRfKqLKhwUSJTrPgZsyo-mhBPm/exec';
+
+  const inquiryForm = document.getElementById('inquiry-form');
+  const submitBtn   = document.getElementById('form-submit-btn');
+
+  inquiryForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Client-side validation for required fields
+    const company  = inquiryForm.querySelector('[name="company"]').value.trim();
+    const contact  = inquiryForm.querySelector('[name="contact_name"]').value.trim();
+    const email    = inquiryForm.querySelector('[name="email"]').value.trim();
+
+    // Remove any previous error banner
+    const prevErr = inquiryForm.querySelector('.form-error-banner');
+    if (prevErr) prevErr.remove();
+
+    if (!company || !contact || !email) {
+      const banner = document.createElement('p');
+      banner.className = 'form-error-banner font-body text-sm text-red-400 text-center';
+      banner.textContent = 'Please fill in Company Name, Contact Name, and Email.';
+      submitBtn.insertAdjacentElement('beforebegin', banner);
+      return;
+    }
+
+    // Collect all form data
+    const payload = {
+      company,
+      contact_name: contact,
+      email,
+      phone:            inquiryForm.querySelector('[name="phone"]').value.trim(),
+      shipment_type:    inquiryForm.querySelector('[name="shipment_type"]').value,
+      frequency:        inquiryForm.querySelector('[name="frequency"]').value,
+      shipment_details: inquiryForm.querySelector('[name="shipment_details"]').value.trim(),
+      message:          inquiryForm.querySelector('[name="message"]').value.trim(),
+    };
+
+    // Loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    try {
+      const res  = await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json();
+
+      if (json.success) {
+        // Replace form with thank-you message
+        inquiryForm.innerHTML = `
+          <div class="flex flex-col items-center gap-4 py-8 text-center">
+            <svg class="w-14 h-14 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <h3 class="font-display font-bold text-2xl text-ot-white">We got your inquiry!</h3>
+            <p class="font-body text-ot-muted max-w-xs">Our team will reach out within 2 business hours. Keep an eye on your inbox.</p>
+          </div>
+        `;
+      } else {
+        throw new Error(json.error || 'Unknown error');
+      }
+    } catch (err) {
+      console.error('Form submission error:', err);
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request a Quote — No Obligation';
+      const banner = document.createElement('p');
+      banner.className = 'form-error-banner font-body text-sm text-red-400 text-center';
+      banner.textContent = 'Something went wrong. Please try again or email us directly.';
+      submitBtn.insertAdjacentElement('beforebegin', banner);
+    }
   });
 </script>
 
