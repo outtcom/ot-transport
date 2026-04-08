@@ -267,7 +267,7 @@
 
     /* ── Mobile menu ── */
     #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; opacity: 0; }
-    #mobile-menu.open { max-height: 400px; opacity: 1; }
+    #mobile-menu.open { max-height: 500px; opacity: 1; }
     .ham-line { transition: transform 0.25s ease, opacity 0.25s ease; }
     .menu-open .ham-line-1 { transform: translateY(8px) rotate(45deg); }
     .menu-open .ham-line-2 { opacity: 0; }
@@ -382,7 +382,7 @@
   <div class="absolute pointer-events-none" style="top:40%;left:30%;width:40%;height:40%;background:radial-gradient(ellipse, rgba(43,127,255,0.08) 0%, transparent 70%);"></div>
 
   <!-- Hero image with overlay -->
-  <div class="absolute inset-0 pointer-events-none" style="top: 25%;">
+  <div class="absolute inset-0 pointer-events-none hero-img-container" style="top: 15%;">
     <img src="assets/images/truck-bridge.webp"
          alt="" aria-hidden="true"
          class="w-full h-full object-cover"
@@ -425,7 +425,7 @@
         Request a Free Quote
       </a>
       <a href="#services"
-         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border text-ot-white font-body font-medium px-8 py-4 rounded-xl hover:text-ot-white hover:bg-ot-dark-800/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 transition-[color,background-color,border-color] duration-200 text-base"
+         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border text-ot-white bg-white/80 font-body font-medium px-8 py-4 rounded-xl hover:text-ot-white hover:bg-ot-dark-800/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 transition-[color,background-color,border-color] duration-200 text-base"
          style="border-color: rgba(43,127,255,0.35);">
         View Our Services
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -460,7 +460,7 @@
   <div class="absolute pointer-events-none" style="top:0;right:-10%;width:50%;height:70%;background:radial-gradient(ellipse, rgba(43,127,255,0.08) 0%, transparent 70%);"></div>
   <div class="absolute pointer-events-none" style="bottom:0;left:-5%;width:40%;height:50%;background:radial-gradient(ellipse, rgba(43,127,255,0.06) 0%, transparent 70%);"></div>
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
 
     <!-- Section header -->
     <div class="text-center mb-16 anim-slide-up">
@@ -482,7 +482,7 @@
           <img src="assets/images/lastmile-handoff.jpg"
                alt="OT Transport driver handing a package to a customer — last mile delivery across Ontario"
                class="w-full object-cover object-center"
-               style="height: 380px;"
+               style="height: clamp(220px, 45vw, 380px);"
                loading="lazy" decoding="async" width="1200" height="800">
           <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to bottom, transparent 55%, rgba(240,246,255,0.6) 100%);"></div>
         </div>
@@ -490,7 +490,7 @@
           <img src="assets/images/lastmile-van-crew.jpg"
                alt="OT Transport last mile delivery crew at the van"
                class="w-full object-cover object-top"
-               style="height: 320px;"
+               style="height: clamp(190px, 38vw, 320px);"
                loading="lazy" decoding="async" width="600" height="800">
           <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to bottom, transparent 55%, rgba(240,246,255,0.6) 100%);"></div>
         </div>
@@ -786,7 +786,7 @@
       <img src="assets/images/truck-fleet.webp"
            alt="OT Transport fleet of box trucks ready for dispatch"
            class="w-full object-cover"
-           style="max-height: 400px;"
+           style="max-height: 400px; min-height: 200px;"
            loading="lazy" decoding="async" width="1920" height="640">
       <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to right, #D6E8FF 0%, transparent 20%, transparent 80%, #D6E8FF 100%);"></div>
       <div class="absolute inset-0 pointer-events-none" style="background: rgba(43,127,255,0.10); mix-blend-mode: multiply;"></div>
@@ -800,7 +800,7 @@
   <!-- Blob -->
   <div class="absolute pointer-events-none inset-0" style="background: radial-gradient(ellipse at 60% 50%, rgba(43,127,255,0.1) 0%, transparent 60%);"></div>
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
       <!-- Image -->
@@ -808,7 +808,7 @@
         <img src="assets/images/truck-driver.webp"
              alt="OT Transport driver ready for dispatch — professional, reliable commercial freight"
              class="w-full object-cover object-top"
-             style="max-height: 500px;"
+             style="max-height: 500px; min-height: 250px;"
              loading="lazy" decoding="async" width="960" height="640">
         <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to bottom, transparent 60%, rgba(13,27,62,0.08) 100%);"></div>
         <div class="absolute inset-0 pointer-events-none" style="background: rgba(43,127,255,0.08); mix-blend-mode: multiply;"></div>
@@ -849,7 +849,7 @@
 </section>
 
 <!-- ===================== FAQ ===================== -->
-<section id="faq" class="relative bg-ot-dark-950 overflow-hidden grain-overlay scroll-mt-16 py-24 lg:py-32">
+<section id="faq" class="relative bg-ot-dark-950 overflow-hidden grain-overlay scroll-mt-16 py-16 sm:py-24 lg:py-32">
   <!-- Blob -->
   <div class="absolute pointer-events-none" style="top:0;right:-10%;width:45%;height:55%;background:radial-gradient(ellipse, rgba(43,127,255,0.08) 0%, transparent 70%);"></div>
 
@@ -944,7 +944,7 @@
 </section>
 
 <!-- ===================== CONTACT / QUOTE ===================== -->
-<section id="contact" class="relative bg-ot-dark-900 overflow-hidden grain-overlay scroll-mt-16 py-24 lg:py-32">
+<section id="contact" class="relative bg-ot-dark-900 overflow-hidden grain-overlay scroll-mt-16 py-16 sm:py-24 lg:py-32">
   <!-- Background blob -->
   <div class="absolute pointer-events-none" style="bottom:-10%;left:-5%;width:55%;height:60%;background:radial-gradient(ellipse, rgba(43,127,255,0.1) 0%, transparent 70%);"></div>
 
