@@ -32,8 +32,9 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "OT Transport",
+    "url": "https://www.ottransport247.com/",
     "description": "Commercial last mile delivery and box truck freight services across all of Ontario. Specializing in last mile delivery, scheduled routes, LTL freight, and dedicated fleet contracts for businesses.",
-    "email": "dispatch@ottransport.com",
+    "email": "ottransport247@gmail.com",
     "openingHours": "Mo-Sa 06:00-20:00",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -41,16 +42,43 @@
       "opens": "06:00",
       "closes": "20:00"
     },
-    "areaServed": {"@type": "Province", "name": "Ontario", "containedInPlace": {"@type": "Country", "name": "Canada"}},
+    "areaServed": [
+      {"@type": "Province", "name": "Ontario", "containedInPlace": {"@type": "Country", "name": "Canada"}},
+      {"@type": "City", "name": "Toronto", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Scarborough", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Pickering", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Ajax", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Whitby", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Oshawa", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Hamilton", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Ottawa", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Mississauga", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Barrie", "containedInPlace": {"@type": "Province", "name": "Ontario"}},
+      {"@type": "City", "name": "Kingston", "containedInPlace": {"@type": "Province", "name": "Ontario"}}
+    ],
+    "knowsAbout": [
+      "Last mile delivery",
+      "Box truck freight",
+      "LTL freight Ontario",
+      "Dedicated fleet logistics",
+      "Same-day delivery GTA",
+      "Scheduled freight routes",
+      "Commercial B2B delivery",
+      "Distribution centre logistics"
+    ],
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", "h2", ".speakable-summary"]
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Freight Services",
       "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Last Mile Delivery", "description": "Specialty last mile delivery from distribution centres to the final destination across all of Ontario."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Last Mile Delivery", "description": "Specialty last mile delivery from distribution centres to the final destination across all of Ontario. GPS-tracked with proof of delivery."}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local Delivery", "description": "Same-day and next-day box truck delivery within the GTA metro area."}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Scheduled Routes", "description": "Recurring delivery contracts for businesses with regular freight needs."}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LTL Freight", "description": "Less-than-truckload solutions — pay only for the space you use."}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dedicated Fleet", "description": "Reserved trucks and drivers exclusively for your operation."}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Scheduled Routes", "description": "Recurring delivery contracts for businesses with regular freight needs. Fixed pricing, consistent drivers, no lock-in."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LTL Freight", "description": "Less-than-truckload solutions — pay only for the space you use. Quoted by weight, volume, and distance."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dedicated Fleet", "description": "Reserved trucks and drivers exclusively for your operation. Suited for high-volume commercial clients."}}
       ]
     }
   }
@@ -90,9 +118,101 @@
       {
         "@type": "Question",
         "name": "How do I get a freight quote from OT Transport?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Fill out the quote form on this page or email dispatch@ottransport.com. We respond to all commercial freight inquiries within 2 business hours, Monday through Saturday."}
+        "acceptedAnswer": {"@type": "Answer", "text": "Fill out the quote form on this page or email ottransport247@gmail.com. We respond to all commercial freight inquiries within 2 business hours, Monday through Saturday."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is last mile delivery?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Last mile delivery is the final leg of the freight supply chain — the movement of goods from a distribution centre or warehouse to the end destination. Despite the name, it can span hundreds of kilometres. It is the most complex and failure-prone stage of logistics, involving tight delivery windows, customer expectations, and proof of delivery requirements. OT Transport was built exclusively to handle this stage for commercial B2B clients across Ontario."}
+      },
+      {
+        "@type": "Question",
+        "name": "How much does last mile delivery cost in Ontario?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Last mile delivery pricing in Ontario varies based on distance, cargo volume and weight, delivery frequency, and whether you need a dedicated or shared fleet. OT Transport provides custom quotes for all commercial freight inquiries. Scheduled route clients receive fixed pricing. LTL clients pay only for the truck space they use. To get an accurate quote, submit a request through the website or email ottransport247@gmail.com — all inquiries receive a response within 2 business hours."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is OT Transport available on weekends and for emergency deliveries?",
+        "acceptedAnswer": {"@type": "Answer", "text": "OT Transport operates Monday through Saturday, 6:00 AM to 8:00 PM Eastern Time. Emergency dispatch is available 24 hours a day, 7 days a week, including Sundays and holidays, for time-critical freight. Contact the dispatch team directly for after-hours emergency shipments."}
       }
     ]
+  }
+  </script>
+
+  <!-- JSON-LD: HowTo (Last Mile Process) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How Last Mile Delivery Works with OT Transport",
+    "description": "OT Transport's 3-step last mile delivery process: from distribution centre pickup to confirmed doorstep delivery across Ontario.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Pickup from Distribution Centre",
+        "text": "OT Transport collects your freight from the distribution centre or warehouse on your schedule. We coordinate pickup timing to align with your supply chain requirements.",
+        "url": "https://www.ottransport247.com/#last-mile"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "GPS-Tracked Transit",
+        "text": "Your freight is tracked in real-time throughout the entire route. Both you and your customers have full visibility of exactly where the shipment is at all times.",
+        "url": "https://www.ottransport247.com/#last-mile"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Confirmed Delivery with Proof",
+        "text": "Timestamped proof of delivery is captured at the final destination and reported back to you. No delivery is considered complete without confirmed receipt.",
+        "url": "https://www.ottransport247.com/#last-mile"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "OT Transport",
+    "url": "https://www.ottransport247.com/",
+    "description": "Ontario's last mile delivery specialists. Commercial box truck freight across the Greater Toronto Area, Durham Region, and all of Ontario.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OT Transport",
+      "url": "https://www.ottransport247.com/"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: WebPage with Speakable -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "OT Transport — Ontario's Last Mile Delivery Specialists",
+    "url": "https://www.ottransport247.com/",
+    "description": "Commercial last mile delivery and box truck freight across all of Ontario. Serving the GTA, Durham Region, and province-wide. 24/7 dispatch.",
+    "inLanguage": "en-CA",
+    "about": {
+      "@type": "Service",
+      "name": "Last Mile Delivery",
+      "description": "Last mile delivery is the final leg of the freight supply chain — moving goods from a distribution centre or warehouse to the end destination. OT Transport specializes exclusively in this critical final step for commercial clients across Ontario.",
+      "provider": {"@type": "LocalBusiness", "name": "OT Transport"}
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".speakable-summary", "h1", "h2"]
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ottransport247.com/"}
+      ]
+    }
   }
   </script>
 
@@ -413,7 +533,7 @@
     </h1>
 
     <!-- Subheading -->
-    <p class="anim-slide-up anim-delay-2 font-body text-lg sm:text-xl max-w-2xl mx-auto mb-10" style="line-height: 1.7; color: #0D1B3E;">
+    <p class="anim-slide-up anim-delay-2 speakable-summary font-body text-lg sm:text-xl max-w-2xl mx-auto mb-10" style="line-height: 1.7; color: #0D1B3E;">
       We don't dabble in last mile — it's the only thing we're built for. OT Transport handles the final, most critical leg of your supply chain across all of Ontario. Tracked. Reliable. On time, every time.
     </p>
 
@@ -929,13 +1049,35 @@
       </div>
 
       <!-- FAQ 6 -->
-      <div class="faq-item" style="border-bottom: none;">
+      <div class="faq-item">
         <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 rounded-sm" aria-expanded="false">
           <span class="font-display font-bold text-ot-white" style="font-size: 1.2rem; letter-spacing: -0.01em;">How do I get a freight quote?</span>
           <svg class="faq-chevron w-5 h-5 text-ot-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
         <div class="faq-answer">
-          <p class="font-body text-ot-muted pb-5" style="line-height: 1.75;">Fill out the quote form below or email dispatch@ottransport.com directly. We respond to all commercial freight inquiries within 2 business hours, Monday through Saturday.</p>
+          <p class="font-body text-ot-muted pb-5" style="line-height: 1.75;">Fill out the quote form below or email ottransport247@gmail.com directly. We respond to all commercial freight inquiries within 2 business hours, Monday through Saturday.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 rounded-sm" aria-expanded="false">
+          <span class="font-display font-bold text-ot-white" style="font-size: 1.2rem; letter-spacing: -0.01em;">How much does last mile delivery cost in Ontario?</span>
+          <svg class="faq-chevron w-5 h-5 text-ot-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p class="font-body text-ot-muted pb-5" style="line-height: 1.75;">Pricing depends on distance, cargo volume and weight, delivery frequency, and fleet type. Scheduled route clients receive fixed pricing per run. LTL clients pay only for the truck space they use, quoted by weight, volume, and distance. One-off and same-day deliveries are priced per job. Submit a quote request or email ottransport247@gmail.com — all inquiries receive a response within 2 business hours, Monday through Saturday.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="faq-item" style="border-bottom: none;">
+        <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ot-orange-400 rounded-sm" aria-expanded="false">
+          <span class="font-display font-bold text-ot-white" style="font-size: 1.2rem; letter-spacing: -0.01em;">Is OT Transport available on weekends and for emergency deliveries?</span>
+          <svg class="faq-chevron w-5 h-5 text-ot-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p class="font-body text-ot-muted pb-5" style="line-height: 1.75;">Standard operations run Monday through Saturday, 6:00 AM to 8:00 PM Eastern Time. Emergency dispatch is available 24/7 — including Sundays and holidays — for time-critical freight. Contact our dispatch team directly for after-hours urgent shipments.</p>
         </div>
       </div>
 
